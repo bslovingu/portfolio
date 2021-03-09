@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>97정재윤</title>
     <!-- GA4 script 추가 -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LHCHC52EX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2LHCHC52EX');
+
+    </script>
 
     <!-- jQuery load -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.js"
-      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <!-- jQuery load end -->
     <!-- vue load -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- vue load end -->
     <!-- bootstrap CSS load -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <!-- bootstrap CSS load end -->
 
     <!-- Custom CSS load -->
@@ -32,151 +36,120 @@
     <link rel="stylesheet" href="assets/fullpage/fullpage.css" />
     <script type="text/javascript" src="assets/fullpage/fullpage.js"></script>
     <script>
-      $(document).ready(function () {
-        $("#fullpage").fullpage({
-          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-          autoScrolling: true,
-          scrollHorizontally: true,
+        $(document).ready(function() {
+            $("#fullpage").fullpage({
+                licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+                autoScrolling: true,
+                scrollHorizontally: true,
+            });
         });
-      });
+
     </script>
     <!-- fullpage load end -->
     <!-- Font Awesome load -->
-    <script
-      src="https://kit.fontawesome.com/56dcc4fdd8.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/56dcc4fdd8.js" crossorigin="anonymous"></script>
     <!-- Font Awesome load end -->
-  </head>
-  <body>
-        <div id="fullpage">
-      <div id="mp" class="section">
-          <div id="name">숫자가 쌓이면 규칙이 생기듯<br />노력을 쌓아 재능을 만드는 개발자 정재윤입니다</div></div>
-      <div id="introduce" class="section">
-        <div id="my-self" class="row">
-          <div style="text-align: center;" class="col-sm-6">
-            <div id="my_image">
-              <img src="assets/img/picture.bmp" />
-            </div>
-            <a class="i_a" href="https://github.com/bslovingu" target="_blank"
-              ><i class="icon fab fa-github"></i
-            ></a>
-          </div>
-          <div id="ms_contents" class="col-sm-6">
-            <p id="profile">#Profile</p>
-            <p class="impactp">정재윤 / Jae-Yun Jeong</p>
-            <p><strong>birth :</strong> 1997.09.01 / 서울특별시</p>
-            <p><strong>Contact :</strong> 010-4022-2860 / bslovingu@hanmail.net</p>
-            <p>
-              <strong>Graduation :</strong> 2017.03 ~ : 한국폴리텍대학
-              서울강서캠퍼스 재학
-            </p>
-            <hr />
-            <p class="impactp">Who am I?</p>
-            <p><strong style="color: red;">규칙</strong>을 찾아</p>
-              <p><strong style="color: red;">가치</strong>를 창출하는 개발자!</p>
-          </div>
-          <div id="tech">
-            <img src="assets/img/js.png" />
-            <img src="assets/img/R.jpg" />
-            <img src="assets/img/mongodb.png" />
-            <img src="assets/img/mysql.png" />
-            <img src="assets/img/oracle.png" />
-            <img src="assets/img/ec2.png" />
-          </div>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div id="mp" class="section">
+            <div id="name">숫자가 쌓이면 규칙이 생기듯<br />노력을 쌓아 재능을 만드는 개발자 정재윤입니다</div>
         </div>
-      </div>
-      <div id="portfolio" class="section">
-        <span id="project_bottom">프로젝트 제목 클릭 시 코드로 이동</span>
-        <div class="slide">
-          <div class="portfolio">
-            <a target="_blank" href="https://github.com/bslovingu/J2Yoon/tree/master/JYJungPRJ"
-              ><p class="project_name">
-                #서울시 공용체육시설 예약 도우미 #SPORnSER
-              </p></a
-            >
-            <object
-              title="YouTube video player"
-              class="youtube-player"
-              type="text/html"
-              width="100%"
-              height="315"
-              data="https://www.youtube.com/embed/dj4wd_K8lQQ"
-              allowFullScreen
-            ></object>
-            <div class="row project_contents">
-              <div class="col-sm-6">
-                <p class="ptitle">프로젝트 설명</p>
-                <span
-                  >"SPORnSER"는 갑자기 약속을 잡아서 함께 운동할 운동친구들이 없는 현대인을 위한
-체육시설 예약을 돕는 웹 어플리케이션입니다. 사용자의 현재위치와 인근 체육시설위치를 보여주며, 경로안내 기능이 있습니다.
-
-지역구/종목별 조회하여 선택한 체육시설종목을 예약/예약취소 할 수 있으며,
-
-저장된 예약 데이터를 지역구/종목별 이용현황으로 시각화하여 보여줍니다.
-
-공지사항, 신고게시판(+댓글)과 같은 커뮤니티의 기능 역시 가지고 있습니다.</span
-                >
-              </div>
-              <div class="col-sm-6">
-                <p class="ptitle">적용기술</p>
-                <p>
-                  - 프레임워크 : Spring Framework<br />
-                  - 데이터베이스 : Oracle 11g<br />
-                  - 적용 공공데이터 : 서울시 공공체육시설 현황<br />
-                  - 기타 : Chart.js, kakao 지도 API, Bootstrap, <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jQuery, JavaScript
-                </p>
-              </div>
-              <div class="dl_file">
-                <a
-                  href="https://github.com/bslovingu/portfolio/blob/master/portfolio_documents/SPORnSER%20%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
-                  ><span>화면설계서</span></a
-                >
-                <a
-                  href="https://github.com/bslovingu/portfolio/blob/master/portfolio_documents/SPORnSER%20%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx"
-                  target="_blank"
-                  ><span>개발산출물</span></a
-                >
-              </div>
+        <div id="introduce" class="section">
+            <div id="my-self" class="row">
+                <div style="text-align: center;" class="col-sm-6">
+                    <div id="my_image">
+                        <img src="assets/img/picture.bmp" />
+                    </div>
+                    <a class="i_a" href="https://github.com/bslovingu" target="_blank"><i class="icon fab fa-github"></i></a>
+                </div>
+                <div id="ms_contents" class="col-sm-6">
+                    <p id="profile">#Profile</p>
+                    <p class="impactp">정재윤 / Jae-Yun Jeong</p>
+                    <p><strong>birth :</strong> 1997.09.01 / 서울특별시</p>
+                    <p><strong>Contact :</strong> 010-4022-2860 / bslovingu@hanmail.net</p>
+                    <p>
+                        <strong>Graduation :</strong> 2017.03 ~ : 한국폴리텍대학
+                        서울강서캠퍼스 재학
+                    </p>
+                    <hr />
+                    <p class="impactp">Who am I?</p>
+                    <p><strong style="color: red;">규칙</strong>을 찾아</p>
+                    <p><strong style="color: red;">가치</strong>를 창출하는 개발자!</p>
+                </div>
+                <div id="tech">
+                    <img src="assets/img/js.png" />
+                    <img src="assets/img/R.jpg" />
+                    <img src="assets/img/mongodb.png" />
+                    <img src="assets/img/mysql.png" />
+                    <img src="assets/img/oracle.png" />
+                    <img src="assets/img/ec2.png" />
+                </div>
             </div>
-          </div>
         </div>
-        <div class="slide">
-          <div class="portfolio">
-            <a
-              target="_blank"
-              href="https://github.com/bslovingu/2ndGradePRJ"
-              ><p class="project_name">
-                #이슈_한눈에_보기 #It's u, Issue!
-              </p></a
-            >
-            <object
-              title="YouTube video player"
-              class="youtube-player"
-              type="text/html"
-              width="100%"
-              height="315"
-              data="https://www.youtube.com/embed/p5L5U_9XMT8"
-              allowFullScreen
-            ></object>
-            <div class="row project_contents">
-              <div class="col-sm-6">
-                <p class="ptitle">프로젝트 설명</p>
-                <span
-                  > 'It’s u, Issue!'는 크롤링을 통하여 네이버 급상승 검색어와 각 검색어별 연관검색어를 1차적으로 제공합니다. 검색어 클릭 시, 뉴스의 최근자료를 분류하며 R과 amCharts를 통하여 뉴스본문과 댓글을 분석 및 시각화합니다. 뉴스본문은 단어의 빈도수를 분석하여 워드클라우드로 시각화된 자료를 제공하며, 뉴스댓글은 오피니언마이닝을 거쳐 부정/긍정 정도를 시각화된 자료로 제공합니다. JSoup 라이브러리 사용시 알 수 없던 뉴스댓글의 전체 개수를 URL connection과 구현한 로직으로 구하며, 일부를 추출(표본추출)한 표본집단을 활용하여 긍정/부정 정도의 오차범위를 제공합니다. 또한, Google Trends를 응용하여 사용자가 클릭한 검색어의 시간대별/지역별 국내 검색현황을 제공합니다. 그 밖의 기능으로는 회원가입, 로그인, 아이디 저장하기, 아이디 찾기, 비밀번호 메일 재발급, 마이페이지(정보수정/회원탈퇴)와 문의사항 메일발송이 사용자 기능으로 있으며, 관리자 기능으로 마이페이지(정보수정/회원탈퇴)와 회원관리(회원 조건 검색/정보수정/회원탈퇴/권한변경)가 있습니다.</span
-                >
-                <br />
-              </div>
-              <div class="col-sm-6">
-                <p class="ptitle">적용기술</p>
-                <p>
-                   - 프레임워크 : Spring Framework <br />
- - 데이터베이스 : MySQL, MongoDB<br />
- - 기타 : amCharts, Google Trends, aws EC2, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jQuery, JavaScript, Bootstrap
-                </p>
-              </div>
-              <div class="dl_file">
-<!--                <a
+        <div id="portfolio" class="section">
+            <span id="project_bottom">프로젝트 제목 클릭 시 코드로 이동</span>
+            <div class="slide">
+                <div class="portfolio">
+                    <a target="_blank" href="https://github.com/bslovingu/J2Yoon/tree/master/JYJungPRJ">
+                        <p class="project_name">
+                            #서울시 공용체육시설 예약 도우미 #SPORnSER
+                        </p>
+                    </a>
+                    <object title="YouTube video player" class="youtube-player" type="text/html" width="100%" height="315" data="https://www.youtube.com/embed/dj4wd_K8lQQ" allowFullScreen></object>
+                    <div class="row project_contents">
+                        <div class="col-sm-6">
+                            <p class="ptitle">프로젝트 설명</p>
+                            <span>"SPORnSER"는 갑자기 약속을 잡아서 함께 운동할 운동친구들이 없는 현대인을 위한
+                                체육시설 예약을 돕는 웹 어플리케이션입니다. 사용자의 현재위치와 인근 체육시설위치를 보여주며, 경로안내 기능이 있습니다.
+
+                                지역구/종목별 조회하여 선택한 체육시설종목을 예약/예약취소 할 수 있으며,
+
+                                저장된 예약 데이터를 지역구/종목별 이용현황으로 시각화하여 보여줍니다.
+
+                                공지사항, 신고게시판(+댓글)과 같은 커뮤니티의 기능 역시 가지고 있습니다.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="ptitle">적용기술</p>
+                            <p>
+                                - 프레임워크 : Spring Framework<br />
+                                - 데이터베이스 : Oracle 11g<br />
+                                - 적용 공공데이터 : 서울시 공공체육시설 현황<br />
+                                - 기타 : Chart.js, kakao 지도 API, Bootstrap, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jQuery, JavaScript
+                            </p>
+                        </div>
+                        <div class="dl_file">
+                            <a href="https://github.com/bslovingu/portfolio/blob/master/portfolio_documents/SPORnSER%20%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"><span>화면설계서</span></a>
+                            <a href="https://github.com/bslovingu/portfolio/blob/master/portfolio_documents/SPORnSER%20%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx" target="_blank"><span>개발산출물</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="portfolio">
+                    <a target="_blank" href="https://github.com/bslovingu/2ndGradePRJ">
+                        <p class="project_name">
+                            #이슈_한눈에_보기 #It's u, Issue!
+                        </p>
+                    </a>
+                    <object title="YouTube video player" class="youtube-player" type="text/html" width="100%" height="315" data="https://www.youtube.com/embed/p5L5U_9XMT8" allowFullScreen></object>
+                    <div class="row project_contents">
+                        <div class="col-sm-6">
+                            <p class="ptitle">프로젝트 설명</p>
+                            <span> 'It’s u, Issue!'는 크롤링을 통하여 네이버 급상승 검색어와 각 검색어별 연관검색어를 1차적으로 제공합니다. 검색어 클릭 시, 뉴스의 최근자료를 분류하며 R과 amCharts를 통하여 뉴스본문과 댓글을 분석 및 시각화합니다. 뉴스본문은 단어의 빈도수를 분석하여 워드클라우드로 시각화된 자료를 제공하며, 뉴스댓글은 오피니언마이닝을 거쳐 부정/긍정 정도를 시각화된 자료로 제공합니다. JSoup 라이브러리 사용시 알 수 없던 뉴스댓글의 전체 개수를 URL connection과 구현한 로직으로 구하며, 일부를 추출(표본추출)한 표본집단을 활용하여 긍정/부정 정도의 오차범위를 제공합니다. 또한, Google Trends를 응용하여 사용자가 클릭한 검색어의 시간대별/지역별 국내 검색현황을 제공합니다. 그 밖의 기능으로는 회원가입, 로그인, 아이디 저장하기, 아이디 찾기, 비밀번호 메일 재발급, 마이페이지(정보수정/회원탈퇴)와 문의사항 메일발송이 사용자 기능으로 있으며, 관리자 기능으로 마이페이지(정보수정/회원탈퇴)와 회원관리(회원 조건 검색/정보수정/회원탈퇴/권한변경)가 있습니다.</span>
+                            <br />
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="ptitle">적용기술</p>
+                            <p>
+                                - 프레임워크 : Spring Framework <br />
+                                - 데이터베이스 : MySQL, MongoDB<br />
+                                - 기타 : amCharts, Google Trends, aws EC2, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jQuery, JavaScript, Bootstrap
+                            </p>
+                        </div>
+                        <div class="dl_file">
+                            <!--                <a
                   href="https://github.com/kangjaenam/portfolio/raw/master/portfolio_documents/%EC%98%A4%EB%8A%98%EC%9D%80%EB%AD%90%EB%A8%B9%EC%A7%80_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
                   target="_blank"
                   ><span>화면설계서</span></a
@@ -186,24 +159,17 @@
                   target="_blank"
                   ><span>개발산출물</span></a
                 >-->
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
-       
-      </div>
     </div>
-  </body>
-  <!-- bootstrap JS load -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"
-  ></script>
-  <!-- bootstrap JS load end -->
+</body>
+<!-- bootstrap JS load -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- bootstrap JS load end -->
+
 </html>
